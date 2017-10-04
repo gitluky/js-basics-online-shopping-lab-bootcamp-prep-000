@@ -105,4 +105,5 @@ function viewCart() {
 
 addToCart('orange')
 addToCart('pear')
+addToCart('quince')
 viewCart()
