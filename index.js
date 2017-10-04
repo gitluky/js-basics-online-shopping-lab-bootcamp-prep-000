@@ -103,5 +103,5 @@ function viewCart() {
   }
 }
 
-var cart = [{apple:5}, {pizza:10}, {cheese: 5}]
-viewCart()
+//var cart = [{apple:5}, {pizza:10}, {cheese: 5}]
+//viewCart()
