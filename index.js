@@ -98,7 +98,7 @@ function viewCart() {
         console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
       }
       else {
-        console.log(`In your cart, you have${cartListChunks[0]}, ${cartListChunks[1]}, and${cartListChunks[2]}`)
+        console.log(`In your cart, you have${cartListChunks[0]}, ${cartListChunks[1]}, and${cartListChunks[2]}.`)
       }
   }
 }
