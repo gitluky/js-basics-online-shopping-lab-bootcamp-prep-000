@@ -92,10 +92,10 @@ function viewCart() {
         cartListChunks[i] = ` ${Object.keys(cart[i])}`
       }
       if (cart.length == 1) {
-        console.log(`In your cart, you have${cartListChunks}.`)
+        console.log(`In your cart, you have${cartListChunks} at $${cart[0][Object.keys(cart[0])]}.`)
       }
       else if (cart.length == 2) {
-        console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
+        console.log(`In your cart, you have${cartListChunks[0]} at $${cart[0][Object.keys(cart[0])]} and${cartListChunks[1]} at $${cart[1][Object.keys(cart[1])]}.`)
       }
       else {
         cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
