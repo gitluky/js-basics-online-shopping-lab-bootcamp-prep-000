@@ -97,11 +97,9 @@ function viewCart() {
       else if (cart.length == 2) {
         console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
       }
-      else if ((cart.length == 3)){
-        console.log(`In your cart, you have${cartListChunks[0]},${cartListChunks[1]}, and ${cartListChunks[2]}.`)
-      }
-      else if ((cart.length == 4)){
-        console.log(`In your cart, you have${cartListChunks[0]},${cartListChunks[1]}, ${cartListChunks[2]}, and ${cartListChunks[2]}.`)
+      else {
+        cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
+        console.log(`In your cart, you have${cartListChunks[0]},${cartListChunks[1]},${cartListChunks[cart.length-1]}`)
       }
   }
 }
