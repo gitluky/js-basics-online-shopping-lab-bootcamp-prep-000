@@ -100,8 +100,8 @@ function viewCart() {
       else {
         cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
         var moreThanTwoString = `In your cart, you have${cartListChunks[0]},${cartListChunks[1]},${cartListChunks[cart.length-1]}`
-        console.log(moreThanTwoString)
       }
+      console.log(moreThanTwoString)
   }
 }
 
