@@ -103,6 +103,6 @@ function viewCart() {
   }
 }
 
-addToCart(orange)
-addToCart(pear)
+addToCart('orange')
+addToCart('pear')
 viewCart()
