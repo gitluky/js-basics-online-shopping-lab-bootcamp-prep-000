@@ -15,7 +15,7 @@ function addToCart(item) {
  console.log(`${item} has been added to your cart.`)
  return cart
 }
-/*
+
 function viewCart() {
   // Prints out a string of the items in the cart along with their prices
   var cartString = ''
@@ -41,7 +41,7 @@ function viewCart() {
   }
   console.log(cartString + '.')
 }
-*/
+
 function total() {
   // Loops through the items in the cart adding up all the prices and returning the total
   var totalPrice = 0
@@ -78,7 +78,7 @@ function placeOrder(cardNumber) {
     cart = []
   }
 }
-
+/*
 function viewCart() {
   // if cart is empty
   if (cart.length == 0) {
@@ -103,6 +103,6 @@ function viewCart() {
       }
   }
 }
-
+*/
 //var cart = [{apple:5}, {pizza:10}, {cheese: 5}]
 //viewCart()
