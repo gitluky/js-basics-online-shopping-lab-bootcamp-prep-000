@@ -89,17 +89,17 @@ function viewCart() {
   else {
     var cartListChunks = [];
       for (let i = 0; i < cart.length; i++) {
-        cartListChunks[i] = ` ${Object.keys(cart[i])}`
+        cartListChunks[i] = ` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`
       }
       if (cart.length == 1) {
-        console.log(`In your cart, you have${cartListChunks} at $${cart[0][Object.keys(cart[0])]}.`)
+        console.log(`In your cart, you have${cartListChunks}.`)
       }
       else if (cart.length == 2) {
-        console.log(`In your cart, you have${cartListChunks[0]} at $${cart[0][Object.keys(cart[0])]} and${cartListChunks[1]} at $${cart[1][Object.keys(cart[1])]}.`)
+        console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
       }
       else {
         cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
-        var cartString = `In your cart, you have${cartListChunks[0]} at $${cart[0][Object.keys(cart[0])]},${cartListChunks[1]} at $${cart[1][Object.keys(cart[1])]},${cartListChunks[cart.length-1]} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}`
+        var cartString = `In your cart, you have${cartListChunks[0]},${cartListChunks[1]},${cartListChunks[cart.length-1]}`
         console.log(cartString)
       }
   }
