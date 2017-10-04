@@ -97,7 +97,7 @@ function viewCart() {
       else if (cart.length == 2) {
         console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
       }
-      else {
+      else if (cart.length == 3){
         cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
         console.log(`In your cart, you have${cartListChunks[0]},${cartListChunks[1]},${cartListChunks[cart.length-1]}`)
       }
