@@ -15,7 +15,7 @@ function addToCart(item) {
  console.log(`${item} has been added to your cart.`)
  return cart
 }
-
+/*
 function viewCart() {
   // Prints out a string of the items in the cart along with their prices
   var cartString = ''
@@ -41,7 +41,7 @@ function viewCart() {
   }
   console.log(cartString + '.')
 }
-
+*/
 function total() {
   // Loops through the items in the cart adding up all the prices and returning the total
   var totalPrice = 0
@@ -78,3 +78,31 @@ function placeOrder(cardNumber) {
     cart = []
   }
 }
+
+function viewCart() {
+  // if cart is empty
+  if (cart.length == 0) {
+    console.log('Your shopping cart is empty.')
+  }
+
+  // if items are in cart
+  else {
+    var cartListChunks = [];
+      for (let i = 0; i < cart.length; i++) {
+        cartListChunks[i] = ` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`
+      }
+      if (cart.length == 1) {
+        console.log(`In your cart, you have${cartListChunks}.`)
+      }
+      else if (cart.length == 2) {
+        console.log(`In your cart, you have${cartListChunks[0]} and${cartListChunks[1]}.`)
+      }
+      else {
+        cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
+        console.log(`In your cart you have ${cartListChunks}`)
+      }
+  }
+}
+
+var car = [{apple:5}, {pizza:10}, {cheese: 5}]
+viewCart()
