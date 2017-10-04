@@ -99,8 +99,7 @@ function viewCart() {
       }
       else {
         cartListChunks[cart.length-1] = ` and ${cartListChunks[cart.length-1]}.`
-        var cartString = `In your cart, you have${cartListChunks}`
-        console.log(cartString)
+        console.log(`In your cart, you have${cartListChunks}`)
       }
   }
 }
